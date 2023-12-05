@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(21, 0, 128);
+}
+
+th {
+    font-size: 36px;
+    column-width: 250px;
+    background-color: lightskyblue
+}
+
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+tr {
+    background-color: white;
+    font-size: 22px;
+}
+
+.table {
+    margin: 40px auto;    
+}
+
+.formGroup {
+    height: 50px;
+    font-size: 28px;
+}
+
+#rating, #title {
+    font-size: .7em;
+}

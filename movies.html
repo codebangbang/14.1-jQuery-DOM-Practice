@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="movies.css" />
+    <!-- allows the use of the sort up and down arrows on the table -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"> 
+    
+  </head>
+  <body>
+    <h1>My Favorite Movies</h1>
+    
+    <form id="newMovieForm">
+      <div class="formGroup">
+        <label for="movieTitle">Movie Title:
+        <input type="text" id="title">
+
+        <label for="movieRating">Movie Rating:
+        <input type="number" id="rating" />
+
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+
+    <br />
+    <hr />
+    <!-- Creates the table that will hold the movie titles, ratings, and an optional delete button -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title <i id="title" class="fas fa-sort-down"></i></th>
+          <th>Rating <i id="rating" class="fas fa-sort-down"></i></th>
+          <th>Delete </tr>
+        </tr>
+      </thead>
+      <tbody id="movieTableBody"></tbody>
+    </table>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+    <script src="movies.js"></script>
+  </body>
+</html>
